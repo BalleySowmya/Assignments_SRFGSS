@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import pandas_profiling as pp
-df=pd.read_csv("/storage/emulated/0/pinky/admission1.csv")
+df=pd.read_csv("/storage/emulated/0/sowmya/admission1.csv")
 print(df.head())
 print(df.tail())
 print(df.dtypes)
@@ -10,7 +10,7 @@ print(df.shape)
 print(df.info)
 print(df.describe())
 Profile = pp.ProfileReport(df)
-Profile.to_file("/storage/emulated/0/pinky/report1.html")
+Profile.to_file("/storage/emulated/0/sowmya/report1.html")
 df=df.drop("Research",axis=1)
 print(df.shape)
 print(df.head())
